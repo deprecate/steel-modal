@@ -13,7 +13,11 @@
 <body>
 	<h1>Modal</h1>
 	<script type="text/javascript">
-		new steel.Modal().render();
+		new steel.Modal({
+			header: steel.SoyComponent.sanitizeHtml('<h4 class="modal-title">Modal header</h4>'),
+			body: 'One fine body...',
+			footer: steel.SoyComponent.sanitizeHtml('<button type="button" class="btn btn-primary">OK</button>')
+		}).render();
 	</script>
 </body>
 </html>
