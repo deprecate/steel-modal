@@ -1,2 +1,91 @@
-.modal {
+@import "steel-bootstrap/src/variables";
+@import "steel-bootstrap/src/mixins";
+
+/* Modal
+	 ========================================================================== */
+
+.modal-dialog {
+	width: 464px;
+}
+
+.modal-content {
+	background-clip: initial;
+	border-radius: $border-radius-small;
+	border: 1px solid rgba($secondary, 0.12);
+	box-shadow: $shadow-large;
+}
+
+/* Modal - Header
+	 ========================================================================== */
+
+.modal-header {
+	border-bottom: 1px solid rgba($secondary, .08);
+	padding: 21px 24px;
+}
+
+.modal-header:empty {
+	border: none;
+	padding: 0;
+}
+
+.modal-header .modal-title {
+	color: $primary;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.2px;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.modal-header .close {
+	color: rgba($secondary, .4);
+	cursor: pointer;
+	float: right;
+	line-height: 16px;
+}
+
+.modal-header .close:hover {
+	color: rgba($secondary, .4);
+}
+
+/* Modal - Body
+	 ========================================================================== */
+
+.modal-body {
+	padding: 21px 44px 60px 22px;
+	border: 0;
+}
+
+.modal-body:empty {
+	padding: 0;
+}
+
+.modal-body p {
+	color: rgba($secondary, .8);
+	font-size: 12px;
+}
+
+.modal-body p:last-child {
+	margin-bottom: 0;
+}
+
+/* Modal - Footer
+	 ========================================================================== */
+
+.modal-footer {
+	border: 0;
+	padding: 12px;
+	text-align: right;
+}
+
+.modal-footer:empty {
+	padding: 0;
+}
+
+.modal-footer .btn {
+	margin: 0 6px;
+}
+
+.modal-footer .btn:last-child {
+	margin-right: 0;
 }
