@@ -14,8 +14,9 @@
 	<h1>Modal Dialog</h1>
 	<script type="text/javascript">
 		new steel.Modal({
-			body: steel.SoyComponent.sanitizeHtml('<p>Are you sure you want to delete this collaborator?</p>'),
-			footer: steel.SoyComponent.sanitizeHtml('<button type="button" class="btn btn-default">Cancel</button><button type="button" class="btn btn-primary">Delete</button>')
+			header: steel.SoyComponent.sanitizeHtml('<h4 class="modal-title">Delete App</h4>'),
+			body: steel.SoyComponent.sanitizeHtml('<p>Are you sure you want delete "My Second App"?</p><p style="color: #e64545;">Warning: This cannot be undone!</p><p>The URL will be lost and all data related to this app will be destroyed.</p>'),
+			footer: steel.SoyComponent.sanitizeHtml('<button class="btn btn-lg btn-danger">Delete Forever</button>')
 		}).render();
 	</script>
 </body>
