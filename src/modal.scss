@@ -34,16 +34,19 @@
 }
 
 .modal-header .close {
-	@include anim(color);
-	color: rgba($primary, .8);
+	@include anim(all);
+	color: rgba($primary, .4);
 	cursor: pointer;
 	float: right;
 	font-size: 32px;
 	line-height: 16px;
+	outline: none;
+	opacity: 1;
 }
 
 .modal-header .close:hover {
-	color: $primary;
+	color: rgba($primary, .8);
+	opacity: 1;
 }
 
 /* Modal - Body
