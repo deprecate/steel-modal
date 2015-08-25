@@ -5,7 +5,14 @@
 	 ========================================================================== */
 
 .modal-dialog {
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
 	width: 582px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .modal-content {
@@ -93,7 +100,7 @@
 }
 
 /* Modal - Backdrop
-   ========================================================================== */
+	 ========================================================================== */
 
 .modal-backdrop {
 	background: $primary;
